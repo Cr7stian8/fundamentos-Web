@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Perfil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <!-- "Links" -->
     <nav>
-        <ul class = "menu">
+        <ul class = "container">
             <li class="itens"><a href="index.html">Home</a></li>
-            <li class="itens"><a href="index.html">Sobre nós</a></li>
-            <li class="itens"><a href="index.html">Colaboradores</a></li>
             <li class="itens"><a href="contato.html">Contato</a></li>
         </ul>
     </nav>
@@ -22,53 +21,50 @@
         <h2>Dev fullstack | JAVA 💻</h2>
     </header>
     <main>
-        <article>
+        <article class="container">
             <section>
-                <p>
+                <h2>Foto do criador</h2>
+                <img src="assets/img/minhaFoto.jpg" alt="foto do criador do conteúdo" id="fotoCriador">
+            </section>
+            <section class="p-30">
+                <p class="justify">
                 Olá. Desde o ensino fundamental sempre gostei de resolver desafios de lógica e de matemática. 
                 </p>
-            </section>
-            <section>
-                <p>
-                    Sempre participei das olimpíadas que ocorriam na minha escola e apesar de não ser uma pessoa competitiva, ao participar das olímpiadas as minhas motivações eram testar meu conhecimento e aprender coisas novas e com a OBMEP (Olimpíada brasileira de matemática para escolas públicas) não foi diferente. Persisti até conseguir a minha menção honrosa, que me possibilitou fazer parte da família 52 no bootcamp da Generation. 
+                <p class="justify">
+                Sempre participei das olimpíadas que ocorriam na minha escola e apesar de não ser uma pessoa competitiva, ao participar das olímpiadas as minhas motivações eram testar meu conhecimento e aprender coisas novas e com a OBMEP (Olimpíada brasileira de matemática para escolas públicas) não foi diferente. Persisti até conseguir a minha menção honrosa, que me possibilitou fazer parte da família 52 no bootcamp da Generation. 
+                </p>
+                <p class="justify">
+                Durante o curso foram desenvolvidos alguns projetos. O primeiro projeto foi desenvolvido completamente em JAVA e demonstrou como a metodologia ágil SCRUM é importante no desenvolvimento de um projeto em grupo, mas além de qualquer metodologia ágil ou conhecimento técnico, durante o bootcamp aprendemos a tratar cada um com respeito e trabalhar a nossa comunicação, que apesar de parecerem coisas simples, durante um trabalho em grupo se mostra uma atividade desafiadora por conta da diversidade de ideias. 
+                </p>
+                <p class="justify">
+                Em meio a esses projetos pude aprender na prática como trabalhar com banco de dados relacional (MySQL) e com tecnologias de desenvolvimento web como os frameworks React e Spring Boot. Essas experiências deixaram claro para mim a minha paixão pelo aprendizado e pela área de tecnologia.
                 </p>
             </section>
-            <section>
-                <p>
-                    Durante o curso foram desenvolvidos alguns projetos. O primeiro projeto foi desenvolvido completamente em JAVA e demonstrou como a metodologia ágil SCRUM é importante no desenvolvimento de um projeto em grupo, mas além de qualquer metodologia ágil ou conhecimento técnico, durante o bootcamp aprendemos a tratar cada um com respeito e trabalhar a nossa comunicação, que apesar de parecerem coisas simples, durante um trabalho em grupo se mostra uma atividade desafiadora por conta da diversidade de ideias. 
-                </p>
-            </section>
-            <section>
-                <p>
-                    Em meio a esses projetos pude aprender na prática como trabalhar com banco de dados relacional (MySQL) e com tecnologias de desenvolvimento web como os frameworks React e Spring Boot. Essas experiências deixaram claro para mim a minha paixão pelo aprendizado e pela área de tecnologia.
-                </p>
-            </section>
-        </article>  
-        <div id="foto">
-            <h2>Foto do criador</h2>
-            <img src="assets/img/minhaFoto.jpg" alt="foto do criador do conteúdo">
-        </div>
-        <style>
-            img{
-                height: 720px;
-                width: 550px;
-            }
-        </style>
-        <div id="video">
-            <h2>Meu video favorito</h2>
-            <iframe 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/e5SoM4ukVr4" 
-            title="YouTube video player" 
-            frameborder="3" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
-            ></iframe> 
-        </div>
+        </article>
+        <h2>Meu video favorito</h2>
+        <section class="container">
+            <div id="video">
+                <iframe 
+                id="video"
+                width="100%" 
+                height="315" 
+                src="https://www.youtube.com/embed/e5SoM4ukVr4" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+                ></iframe> 
+            </div>
+        </section>
     </main>
+    <hr>
     <footer>
-        <p>Todos os diretos reservados a Cr7stian8 </p>
+        <div class="container">
+            <p>Todos os direitos reservados: Cristiano Corrêa &copy;</p>
+            <a href="https://github.com/Cr7stian8"><img class="tm-social p-30 mg-left" src="assets/img/github.png" alt="logo do github"></a>
+            <a href="https://www.linkedin.com/in/Cr7stian8/"><img class="tm-social p-30" src="assets/img/linkedin.png" alt="logo do linkedin"></a>
+            <a href="https://api.whatsapp.com/send?phone=5517992499332&text=Olá,%20Cristiano! "><img class="tm-social p-30" src="assets/img/whatsapp.png" alt="logo do whatsapp"></a> 
+        </div>
     </footer>
 </body>
 </html>

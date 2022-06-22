@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>documento</title>
+    <title>contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <nav>
-        <ul class = "menu">
+        <ul class = "container">
             <li class="itens"><a href="index.html">Home</a></li>
-            <li class="itens"><a href="index.html">Sobre nós</a></li>
-            <li class="itens"><a href="index.html">Colaboradores</a></li>
             <li class="itens"><a href="contato.html">Contato</a></li>
         </ul>
     </nav>
@@ -22,41 +21,54 @@
 
     </main>
 
-    <form>
+    
+    <div class="container mb-50">
         <section>
-            <article>
-                <label for="nome">Nome</label>
-                <input type="text" id="nome">
-            </article>
-            <article>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email">
-            </article>
-            <article>
-                <label for="assunto">Assunto:</label>
-            </article>
-            <section>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </section>
-            <section class="enviarContato">
-                <button>Enviar</button>
-            </section>
+            <header>
+                <p>Minha casa, Numero da minha casa</p>
+                <p>Minha Cidade - Estado da minha cidade</p>
+            </header>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119339.97192370331!2d-49.5258848471222!3d-20.81659375342216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdad614c2df789%3A0x8f2fb0f070642c09!2sS%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto%2C%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1655837442023!5m2!1sen!2sbr" 
+            width="400" 
+            height="250" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
-    </form>
-
-    <header>
-        <h2>Endereço: </h2>
-        <p>Minha casa, Numero da minha casa</p>
-        <p>Minha Cidade - Estado da minha cidade</p>
-    </header>
-    <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119339.97192370331!2d-49.5258848471222!3d-20.81659375342216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdad614c2df789%3A0x8f2fb0f070642c09!2sS%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto%2C%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1655837442023!5m2!1sen!2sbr" 
-    width="400" 
-    height="250" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+        <form  class="mg-left">            
+            <section>
+                <article>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome">
+                </article>
+                <article>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email">
+                </article>
+                <article>
+                    <label for="assunto">Assunto:</label>
+                </article>
+                <article>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </article>
+                <article class="enviarContato">
+                    <button>Enviar</button>
+                </article>
+            </section>
+        </form>
+        
+    </div>
+    <hr>
+    <footer>
+        <div class="container">
+            <p>Todos os direitos reservados: Cristiano Corrêa &copy;</p>
+            <a href="https://github.com/Cr7stian8"><img class="tm-social p-30 mg-left" src="assets/img/github.png" alt="logo do github"></a>
+            <a href="https://www.linkedin.com/in/Cr7stian8/"><img class="tm-social p-30" src="assets/img/linkedin.png" alt="logo do linkedin"></a>
+            <a href="https://api.whatsapp.com/send?phone=5517992499332&text=Olá,%20Cristiano! "><img class="tm-social p-30" src="assets/img/whatsapp.png" alt="logo do whatsapp"></a> 
+        </div>
+    </footer>
 </body>
 </html>
