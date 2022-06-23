@@ -2,6 +2,7 @@ body{
     display:flex;
     flex-direction: column;
     text-align: center;
+    height: 768px;
 }
 
 .mb-20{
@@ -80,4 +81,5 @@ nav li a:hover{
 footer{
     background-color: #a8a0a0;
     width: 100vw;
+
 }

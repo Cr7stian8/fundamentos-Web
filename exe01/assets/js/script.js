@@ -57,8 +57,8 @@ function validaNome() {
  }
  
  function mapaZoom() {
-    mapa.style.width = '400px'
-    mapa.style.height = '250px'
+    mapa.style.width = '500px'
+    mapa.style.height = '300px'
  }
  
  function mapaNormal() {

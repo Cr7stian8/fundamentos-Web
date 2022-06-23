@@ -1,1 +1,7 @@
-# fundamentos-Web
+# Telas do projeto
+<p>As telas criados durante o estudo de fundamentos web: <br></p>
+
+![image1](exe01\assets\img\tela1.jpg)
+![image2](exe01\assets\img\tela2.jpg)
+
+LinkDo vídeo de exibição: <a>https://www.youtube.com/watch?v=PJzsFYfzX54&ab_channel=Cristiano</a>
