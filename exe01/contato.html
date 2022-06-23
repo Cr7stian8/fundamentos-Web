@@ -28,7 +28,11 @@
                 <p>Minha casa, Numero da minha casa</p>
                 <p>Minha Cidade - Estado da minha cidade</p>
             </header>
-            <iframe 
+            <!-- Eventos -->
+            <iframe
+            onmousemove="mapaZoom()"
+            onmouseout="mapaNormal()"
+            id="mapa"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119339.97192370331!2d-49.5258848471222!3d-20.81659375342216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdad614c2df789%3A0x8f2fb0f070642c09!2sS%C3%A3o%20Jos%C3%A9%20do%20Rio%20Preto%2C%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1655837442023!5m2!1sen!2sbr" 
             width="400" 
             height="250" 
@@ -38,27 +42,25 @@
             referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </section>
-        <form  class="mg-left">            
-            <section>
-                <article>
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome">
-                </article>
-                <article>
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email">
-                </article>
-                <article>
-                    <label for="assunto">Assunto:</label>
-                </article>
-                <article>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </article>
-                <article class="enviarContato">
-                    <button>Enviar</button>
-                </article>
-            </section>
-        </form>
+        <div class="container mb-50">
+            <div class="mg-left txt-left">
+               <form>
+                  <label for="nome">Nome:</label> <br>
+                  <input type="text" id="nome" onkeyup='validaNome()'>
+                  <div class="mb-20" id='txtNome'></div>
+
+                  <label for="email">E-mail:</label> <br>
+                  <input type="email" id="email" onkeyup='validaEmail()'>
+                  <div class="mb-20" id='txtEmail'></div>
+
+                  <label for="assunto">Assunto:</label> <br>
+                  <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                  <div class="mb-20" id='txtAssunto'></div>
+                  
+                  <button onclick="enviar()" >Enviar</button>
+               </form>
+            </div>
+        </div>
         
     </div>
     <hr>
@@ -70,5 +72,6 @@
             <a href="https://api.whatsapp.com/send?phone=5517992499332&text=Olá,%20Cristiano! "><img class="tm-social p-30" src="assets/img/whatsapp.png" alt="logo do whatsapp"></a> 
         </div>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
